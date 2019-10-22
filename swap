@@ -1,0 +1,29 @@
+//by anisa shahirah 
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+void swap(int a, int b);
+int main()
+{
+	int a, b;
+	cout << "please enter 2 integers";
+	cin >> a >> b;
+	swap(a, b);
+	cout << "a in main is " << a << endl;
+	cout << "b in main is " << b << endl;
+}
+void swap(int a, int b)
+{
+	cout << "a is " << a << endl;
+	cout << "b is " << b << endl;
+
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+
+	cout << "after swap the value of a =" << a << endl;
+	cout << "after swap the value of b = " << b << endl;
+}
+
