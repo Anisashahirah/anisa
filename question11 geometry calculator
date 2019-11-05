@@ -1,0 +1,43 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int num;double area,radius,length,width,base,height;
+    cout<<"please choose \n 1) Calculate the area of a circle \n 2) Calculate the area of a rectangle \n 3)calculate the area of Triangle \n 4)exit \n ";
+    cin >> num;
+    
+    switch(num)
+    {
+        case 1 :{
+            cout<<"please enter the radius of the circle";
+            cin>>radius;
+            area=3.14159*radius*radius;
+            cout<<"area of circle is;"<<area<<endl;
+            break;
+            }
+        case 2 :{
+            cout<<"please enter length";
+            cin>>length;
+            cout<<"please enter width";
+            cin>>width;
+            area=length*width;
+            cout<<"area of rectangle is:"<<area<<endl;
+            break;
+            }
+        case 3 : {
+            cout<<"please enter base \n";
+            cin>>base;
+            cout<<"please enter height \n";
+              cin>>height;
+            area=(1/2)*base*height;
+            cout<<"area of triangle is:"<<area<<endl;
+            break;
+            }
+        default :
+            cout<<"program terminate";
+    }
+    cout<<" \n end"<<endl;
+    return 0;
+}
