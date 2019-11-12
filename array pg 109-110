@@ -1,0 +1,26 @@
+#include <iostream>
+#include<cstdlib>
+using namespace std;
+#define n 6
+
+int main()
+{
+  int i;
+ double largest,ranNumbers[n];
+ 
+ cout<<"6 random number generated are :"<<endl;
+ for(int i=0;i<n;i++)
+ {
+     ranNumbers[i]=rand();
+     cout<<ranNumbers[i]<<" ";
+ }
+    largest=ranNumbers[0];
+    for(int i=1;i<n;i++)
+        if(largest<ranNumbers[i])
+        largest=ranNumbers[i];
+        
+        cout<<"\nthe largest value = "<<largest<<endl;
+    
+ 
+  return 0;
+}
